@@ -1,0 +1,38 @@
+.header {
+  @include row-flex();
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: center;
+
+  &__black-logo {
+    @include col();
+    @include size(5);
+    img {
+      width: 149px;
+      height: 115px;
+    }
+  }
+
+  &__logo {
+    @include col();
+    @include size(3);
+    img {
+      width: 154px;
+      height: 193px;
+    }
+  }
+
+  &__brands {
+    @include col();
+    @include size(4);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    
+img {
+  display: block;
+}
+  }
+}

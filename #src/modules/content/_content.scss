@@ -1,0 +1,118 @@
+.content-body {
+
+  text-align: center;
+  text-transform: uppercase;
+
+
+  &__small-title {
+    margin-top: 24px;
+    font-size: 35px;
+    line-height: 36px;
+    font-weight: 900;
+    color: #ffffff;
+
+    span {
+      font-size: 22px;
+    }
+  }
+
+  &__grill {
+    margin-top: 24px;
+
+    img {
+      width: 156px;
+      height: 209px;
+    }
+  }
+}
+
+.form {
+  font-family: 'Roboto', sans-serif;
+  
+  &__row {
+    padding: 0 115px;
+    @include row-flex();
+    justify-content: center;
+  }
+
+  &__col-6 {
+    @include col();
+    @include size(6);
+  }
+
+  input {
+    margin-bottom: 24px;
+    padding: 16px;
+    width: 100%;
+    font-size: 18px;
+    color: #660000;
+    background-color: #f99d4d;
+    border: 1px solid #660000;
+    border-radius: 25px;
+    outline: none;
+
+    &:focus {
+      border: 2px solid #660000;
+    }
+    
+    &::placeholder {
+      color: #660000;
+    }
+  }
+  
+  button {
+    margin-bottom: 16px;
+    padding: 16px 70px;
+    font-size: 18px;
+    color: #f99d4d;
+    background-color: #660000;
+    border: 1px solid #660000;
+    border-radius: 25px;
+    outline: none;
+    transition: $base-transition;
+    
+    &:hover {
+      color: #660000;
+      background-color: #f99d4d;
+    }
+  }
+  
+  &__descr {
+    margin: 0 auto;
+    max-width: 760px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: none;
+    color: #660000;
+    
+    a {
+      text-decoration: underline;
+      color: inherit;
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  
+  .checkbox-wrapper {
+    margin-top: 20px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    
+    input {
+      position: absolute;
+      left: -36px;
+      top: 8px;
+      width: 24px;
+      height: 24px;
+    }
+    
+    label {
+      font-size: 24px;
+      text-transform: none;
+      color: #660000;
+    }
+  }
+}

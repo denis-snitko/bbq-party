@@ -1,0 +1,29 @@
+.address {
+  line-height: 24px;
+
+  .main-title {
+    text-align: center;
+  }
+
+  &__text {
+    margin-top: 24px;
+    @include row-flex();
+  }
+
+  &__text-col-6 {
+    @include col();
+    @include size(6);
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      color: #660000;
+    }
+
+    p {
+      color: #660000;
+
+    }
+  }
+}
