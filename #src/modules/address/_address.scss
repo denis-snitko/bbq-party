@@ -6,16 +6,17 @@
   }
 
   &__text {
-    margin-top: 24px;
+    margin-top: 48px;
     @include row-flex();
+    justify-content: center;
   }
 
   &__text-col-6 {
     @include col();
     @include size(6);
+    padding: 0 100px;
 
     h2 {
-      margin-top: 24px;
       margin-bottom: 10px;
       font-size: 30px;
       color: #660000;
@@ -23,7 +24,6 @@
 
     p {
       color: #660000;
-
     }
   }
 }
