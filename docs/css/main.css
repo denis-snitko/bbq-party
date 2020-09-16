@@ -439,12 +439,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("../img/bg-desktop.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .modal-check__body {
   padding: 20px 30px;
   border: 2px solid #660000;
   border-radius: 5px;
+  background-color: #f99d4d;
 }
 
 .modal-check__text {
@@ -920,6 +923,11 @@ body {
   }
 
   .main-body {
+    background: url("../img/bg-mobile.jpg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .modal-check {
     background: url("../img/bg-mobile.jpg") no-repeat center center;
     background-size: 100% 100%;
   }
