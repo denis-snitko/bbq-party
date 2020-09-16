@@ -898,6 +898,10 @@ body {
 }
 
 @media screen and (max-width: 360px) {
+  .header__brands img {
+    width: 38px;
+  }
+
   .header__black-logo {
     width: calc(20% - 30px);
   }

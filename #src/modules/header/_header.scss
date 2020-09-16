@@ -75,6 +75,10 @@
         width: 52px;
 
       }
+
+      @media screen and (max-width: 360px) {
+          width: 38px;
+      }
     }
 
     .brand-1 {
