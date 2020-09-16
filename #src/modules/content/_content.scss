@@ -1,5 +1,4 @@
 .content-body {
-
   text-align: center;
   text-transform: uppercase;
 
@@ -11,8 +10,28 @@
     font-weight: 900;
     color: #ffffff;
 
+    @include md-block() {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @include sm-block() {
+      margin-top: 10px;
+      font-size: 17px;
+      line-height: 22px;
+
+    }
+
     span {
       font-size: 22px;
+
+      @include md-block() {
+        font-size: 16px;
+      }
+
+      @include sm-block() {
+        font-size: 12px;
+      }
     }
   }
 
@@ -33,11 +52,16 @@
     padding: 0 115px;
     @include row-flex();
     justify-content: center;
+
+    @include md-block() {
+      padding: 0 15px;
+    }
   }
 
   &__col-6 {
     @include col();
     @include size(6);
+    @include size-sm(12);
   }
 
   input {
@@ -82,8 +106,14 @@
     max-width: 760px;
     font-size: 24px;
     line-height: 30px;
+    font-weight: 700;
     text-transform: none;
     color: #660000;
+
+    @include sm-block() {
+      font-size: 14px;
+      line-height: 20px;
+    }
     
     a {
       text-decoration: underline;
@@ -96,23 +126,39 @@
   }
   
   .checkbox-wrapper {
-    margin-top: 20px;
     position: relative;
     display: inline-flex;
+    margin-top: 20px;
     justify-content: center;
+
+    @include sm-block() {
+      margin-top: 0;
+    }
     
     input {
       position: absolute;
-      left: -36px;
       top: 8px;
+      left: -36px;
       width: 24px;
       height: 24px;
+
+      @include sm-block() {
+        top: 9px;
+        left: -30px;
+        width: 20px;
+        height: 20px;
+      }
     }
     
     label {
       font-size: 24px;
+      font-weight: 700;
       text-transform: none;
       color: #660000;
+
+      @include sm-block() {
+        font-size: 14px;
+      }
     }
   }
 }

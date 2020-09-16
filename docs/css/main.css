@@ -394,6 +394,7 @@ body {
 .main-title {
   font-size: 85px;
   font-weight: 900;
+  text-transform: uppercase;
   color: #660000;
 }
 
@@ -614,6 +615,7 @@ body {
   max-width: 760px;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: none;
   color: #660000;
 }
@@ -628,11 +630,11 @@ body {
 }
 
 .form .checkbox-wrapper {
-  margin-top: 20px;
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-top: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -640,14 +642,15 @@ body {
 
 .form .checkbox-wrapper input {
   position: absolute;
-  left: -36px;
   top: 8px;
+  left: -36px;
   width: 24px;
   height: 24px;
 }
 
 .form .checkbox-wrapper label {
   font-size: 24px;
+  font-weight: 700;
   text-transform: none;
   color: #660000;
 }
@@ -696,6 +699,8 @@ body {
 }
 
 .address .main-title {
+  font-size: 65px;
+  line-height: 65px;
   text-align: center;
 }
 
@@ -734,3 +739,166 @@ body {
 }
 
 /* END MAIN STYLES */
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 60px;
+  }
+
+  .header__black-logo {
+    width: calc(33.33333% - 30px);
+  }
+
+  .header__logo {
+    width: calc(25% - 30px);
+  }
+
+  .header__brands {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .content-body__small-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .content-body__small-title span {
+    font-size: 16px;
+  }
+
+  .form__row {
+    padding: 0 15px;
+  }
+
+  .conditions__text {
+    margin-top: 24px;
+    padding: 0;
+  }
+
+  .address__text-col-6 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-title {
+    font-size: 34px;
+  }
+
+  .main-body {
+    background: url("../img/bg-mobile.jpg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+
+  .header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .header__black-logo {
+    width: calc(25% - 30px);
+  }
+
+  .header__black-logo {
+    margin: 0;
+  }
+
+  .header__black-logo img {
+    width: 60px;
+    height: 46px;
+  }
+
+  .header__logo {
+    width: calc(25% - 30px);
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__logo img {
+    width: 100px;
+    height: 124px;
+  }
+
+  .header__brands {
+    margin: 0;
+  }
+
+  .header__brands img {
+    width: 52px;
+  }
+
+  .header__brands .brand-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .content-body__small-title {
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .content-body__small-title span {
+    font-size: 12px;
+  }
+
+  .form__col-6 {
+    width: calc(100% - 30px);
+  }
+
+  .form__descr {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .form .checkbox-wrapper {
+    margin-top: 0;
+  }
+
+  .form .checkbox-wrapper input {
+    top: 9px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .form .checkbox-wrapper label {
+    font-size: 14px;
+  }
+
+  .conditions .main-title {
+    font-size: 24px;
+  }
+
+  .conditions__text {
+    margin-top: 16px;
+  }
+
+  .conditions__text {
+    font-size: 12px;
+  }
+
+  .address .main-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .address__text {
+    margin-top: 24px;
+  }
+
+  .address__text-col-6 {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header__black-logo {
+    width: calc(20% - 30px);
+  }
+}

@@ -2,19 +2,36 @@
   line-height: 24px;
 
   .main-title {
+    font-size: 65px;
+    line-height: 65px;
     text-align: center;
+
+    @include sm-block() {
+      font-size: 24px;
+      line-height: 30px;
+
+    }
   }
 
   &__text {
     margin-top: 48px;
     @include row-flex();
     justify-content: center;
+
+    @include sm-block() {
+      margin-top: 24px;
+    }
   }
 
   &__text-col-6 {
     @include col();
     @include size(6);
+    @include size-sm(12);
     padding: 0 100px;
+    
+    @include md-block() {
+      padding: 0;
+    }
 
     h2 {
       margin-bottom: 10px;

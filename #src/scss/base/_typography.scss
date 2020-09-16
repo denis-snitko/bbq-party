@@ -10,5 +10,14 @@ body {
 .main-title {
   font-size: 85px;
   font-weight: 900;
+  text-transform: uppercase;
   color: #660000;
+  
+  @include md-block() {
+    font-size: 60px;
+  }
+  
+  @include sm-block() {
+    font-size: 34px;
+  }
 }
