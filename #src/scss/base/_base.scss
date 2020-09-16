@@ -76,3 +76,15 @@
   }
 
 }
+
+
+.insta {
+  position: relative;
+  
+  img {
+    position: absolute;
+    top: -3px;
+    right: -30px;
+    width: 23px;
+  }
+}

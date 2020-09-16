@@ -490,6 +490,17 @@ body {
   background-color: #f99d4d;
 }
 
+.insta {
+  position: relative;
+}
+
+.insta img {
+  position: absolute;
+  top: -3px;
+  right: -30px;
+  width: 23px;
+}
+
 /* End Base styles */
 
 /* MAIN STYLES */
@@ -532,6 +543,7 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   width: calc(25% - 30px);
+  margin-bottom: 16px;
 }
 
 .header__logo img {
