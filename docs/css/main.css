@@ -520,12 +520,53 @@ body {
 }
 
 .content-body__grill {
+  position: relative;
+  display: inline-block;
   margin-top: 24px;
 }
 
-.content-body__grill img {
+.content-body__grill .grill-img {
   width: 156px;
   height: 209px;
+}
+
+.content-body__grill .bottle-1,
+.content-body__grill .bottle-2,
+.content-body__grill .bottle-3,
+.content-body__grill .bottle-4,
+.content-body__grill .bottle-5,
+.content-body__grill .bottle-6 {
+  position: absolute;
+}
+
+.content-body__grill .bottle-1 {
+  top: 0;
+  left: -110px;
+}
+
+.content-body__grill .bottle-2 {
+  top: 75px;
+  left: -55px;
+}
+
+.content-body__grill .bottle-3 {
+  top: 112px;
+  left: -145px;
+}
+
+.content-body__grill .bottle-4 {
+  top: 0;
+  right: -110px;
+}
+
+.content-body__grill .bottle-5 {
+  top: 75px;
+  right: -160px;
+}
+
+.content-body__grill .bottle-6 {
+  top: 135px;
+  right: -55px;
 }
 
 .form {
@@ -766,6 +807,39 @@ body {
 
   .content-body__small-title span {
     font-size: 16px;
+  }
+
+  .content-body__grill .bottle-1 {
+    left: -35px;
+    width: 37px;
+  }
+
+  .content-body__grill .bottle-2 {
+    top: 85px;
+    left: -25px;
+    width: 25px;
+  }
+
+  .content-body__grill .bottle-3 {
+    top: 145px;
+    left: -45px;
+    width: 35px;
+  }
+
+  .content-body__grill .bottle-4 {
+    right: -40px;
+    width: 33px;
+  }
+
+  .content-body__grill .bottle-5 {
+    right: -50px;
+    width: 36px;
+  }
+
+  .content-body__grill .bottle-6 {
+    top: 159px;
+    right: -23px;
+    width: 16px;
   }
 
   .form__row {

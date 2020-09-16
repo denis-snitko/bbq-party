@@ -36,18 +36,87 @@
   }
 
   &__grill {
+    position: relative;
+    display: inline-block;
     margin-top: 24px;
 
-    img {
+    .grill-img {
       width: 156px;
       height: 209px;
+    }
+
+    .bottle-1,
+    .bottle-2,
+    .bottle-3,
+    .bottle-4,
+    .bottle-5,
+    .bottle-6 {
+      position: absolute;
+    }
+    
+    .bottle-1{
+      top: 0;
+      left: -110px;
+      
+      @include md-block() {
+        left: -35px;
+        width: 37px;
+      }
+    }
+    
+    .bottle-2{
+      top: 75px;
+      left: -55px;
+      @include md-block() {
+        top: 85px;
+        left: -25px;
+        width: 25px;
+      }
+    }
+    
+    .bottle-3{
+      top: 112px;
+      left: -145px;
+      @include md-block() {
+        top: 145px;
+        left: -45px;
+        width: 35px;
+      }
+    }
+    
+    .bottle-4{
+      top: 0;
+      right: -110px;
+      @include md-block() {
+        right: -40px;
+        width: 33px;
+      }
+    }
+    
+    .bottle-5{
+      top: 75px;
+      right: -160px;
+      @include md-block() {
+        right: -50px;
+        width: 36px;
+      }
+    }
+    
+    .bottle-6{
+      top: 135px;
+      right: -55px;
+      @include md-block() {
+        top: 159px;
+        right: -23px;
+        width: 16px;
+      }
     }
   }
 }
 
 .form {
   font-family: 'Roboto', sans-serif;
-  
+
   &__row {
     padding: 0 115px;
     @include row-flex();
@@ -78,12 +147,12 @@
     &:focus {
       border: 2px solid #660000;
     }
-    
+
     &::placeholder {
       color: #660000;
     }
   }
-  
+
   button {
     margin-bottom: 16px;
     padding: 16px 70px;
@@ -94,13 +163,13 @@
     border-radius: 25px;
     outline: none;
     transition: $base-transition;
-    
+
     &:hover {
       color: #660000;
       background-color: #f99d4d;
     }
   }
-  
+
   &__descr {
     margin: 0 auto;
     max-width: 760px;
@@ -114,17 +183,17 @@
       font-size: 14px;
       line-height: 20px;
     }
-    
+
     a {
       text-decoration: underline;
       color: inherit;
-      
+
       &:hover {
         text-decoration: none;
       }
     }
   }
-  
+
   .checkbox-wrapper {
     position: relative;
     display: inline-flex;
@@ -134,7 +203,7 @@
     @include sm-block() {
       margin-top: 0;
     }
-    
+
     input {
       position: absolute;
       top: 8px;
@@ -149,7 +218,7 @@
         height: 20px;
       }
     }
-    
+
     label {
       font-size: 24px;
       font-weight: 700;
