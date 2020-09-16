@@ -1,10 +1,18 @@
 const elMainBody = document.querySelector('.main-body');
-let age = confirm('Вам есть 18 лет?');
+const elModalCheck = document.querySelector('.modal-check');
 
-
-if (age) {
-  elMainBody.setAttribute('style', 'display: flex');
-} else {
-  elMainBody.remove();
-  document.location.href = 'http://google.com';
-}
+elModalCheck.addEventListener('click', (event) => {
+  
+  if ( event.target.classList.contains('modal-check__yes') ) {
+    
+    elModalCheck.remove();
+    elMainBody.setAttribute('style', 'display: flex');
+    
+  } else if ( event.target.classList.contains('modal-check__no') ) {
+    
+    elMainBody.remove();
+    document.location.href = 'http://google.com';
+    
+  }
+  
+})
