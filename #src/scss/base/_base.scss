@@ -34,26 +34,26 @@
     background: url('../img/bg-mobile.jpg') no-repeat center center;
     background-size: 100% 100%;
   }
-  
+
   &__body {
     padding: 20px 30px;
+    background-color: #f99d4d;
     border: 2px solid #660000;
     border-radius: 5px;
-    background-color: #f99d4d;
   }
-  
+
   &__text {
     font-size: 30px;
     color: #660000;
   }
-  
+
   &__btn-body {
     display: flex;
     margin: 0 -10px;
     padding-top: 24px;
     justify-content: space-between;
   }
-  
+
   &__yes,
   &__no {
     margin-right: 10px;
@@ -77,14 +77,64 @@
 
 }
 
+.modal-warning {
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  display: none;
+  line-height: 24px;
+  transform: translate(-50%);
+
+  &__body {
+    position: relative;
+    padding: 24px 34px;
+    background-color: #f99d4d;
+    border: 2px solid #660000;
+    border-radius: 5px;
+  }
+  
+  &__close  {
+    position: absolute;
+    top: 3px;
+    right: 9px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #660000;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 24px;
+    color: #660000;
+  }
+}
 
 .insta {
   position: relative;
-  
+
   img {
     position: absolute;
     top: -3px;
     right: -30px;
     width: 23px;
+  }
+}
+
+.link-back {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 8px 24px;
+  font-size: 18px;
+  color: #f99d4d;
+  background-color: #660000;
+  border: 1px solid #660000;
+  border-radius: 25px;
+  outline: none;
+  transition: $base-transition;
+
+  &:hover {
+    color: #660000;
+    background-color: #f99d4d;
   }
 }

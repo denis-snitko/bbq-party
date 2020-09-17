@@ -53,18 +53,18 @@
     .bottle-6 {
       position: absolute;
     }
-    
-    .bottle-1{
+
+    .bottle-1 {
       top: 0;
       left: -110px;
-      
+
       @include md-block() {
         left: -35px;
         width: 37px;
       }
     }
-    
-    .bottle-2{
+
+    .bottle-2 {
       top: 75px;
       left: -55px;
       @include md-block() {
@@ -73,8 +73,8 @@
         width: 25px;
       }
     }
-    
-    .bottle-3{
+
+    .bottle-3 {
       top: 112px;
       left: -145px;
       @include md-block() {
@@ -83,8 +83,8 @@
         width: 35px;
       }
     }
-    
-    .bottle-4{
+
+    .bottle-4 {
       top: 0;
       right: -110px;
       @include md-block() {
@@ -92,8 +92,8 @@
         width: 33px;
       }
     }
-    
-    .bottle-5{
+
+    .bottle-5 {
       top: 75px;
       right: -160px;
       @include md-block() {
@@ -101,8 +101,8 @@
         width: 36px;
       }
     }
-    
-    .bottle-6{
+
+    .bottle-6 {
       top: 135px;
       right: -55px;
       @include md-block() {
@@ -134,8 +134,8 @@
   }
 
   input {
-    margin-bottom: 24px;
-    padding: 16px;
+    margin-bottom: 20px;
+    padding: 10px 16px;
     width: 100%;
     font-size: 18px;
     color: #660000;
@@ -169,65 +169,52 @@
       background-color: #f99d4d;
     }
   }
+}
 
-  &__descr {
-    margin: 0 auto;
-    max-width: 760px;
-    font-size: 24px;
-    line-height: 30px;
+
+.conditions-block {
+  padding: 0 145px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: left;
+  text-transform: none;
+  color: #660000;
+
+  @include md-block() {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  
+  input {
+    width: auto;
+  }
+  
+  a {
     font-weight: 700;
-    text-transform: none;
-    color: #660000;
-
-    @include sm-block() {
-      font-size: 14px;
-      line-height: 20px;
-    }
-
-    a {
-      text-decoration: underline;
-      color: inherit;
-
-      &:hover {
-        text-decoration: none;
-      }
+    text-decoration: underline;
+    color: inherit;
+    
+    &:hover {
+      text-decoration: none;
     }
   }
+}
 
-  .checkbox-wrapper {
-    position: relative;
-    display: inline-flex;
-    margin-top: 20px;
-    justify-content: center;
+.adrress-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: none;
+  color: #660000;
 
-    @include sm-block() {
-      margin-top: 0;
-    }
+  @include md-block() {
+    font-size: 18px;
+    line-height: 18px;
+  }
 
-    input {
-      position: absolute;
-      top: 8px;
-      left: -36px;
-      width: 24px;
-      height: 24px;
-
-      @include sm-block() {
-        top: 9px;
-        left: -30px;
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    label {
-      font-size: 24px;
-      font-weight: 700;
-      text-transform: none;
-      color: #660000;
-
-      @include sm-block() {
-        font-size: 14px;
-      }
-    }
+  &:hover {
+    text-decoration: none;
   }
 }
