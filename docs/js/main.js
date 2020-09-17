@@ -115,3 +115,8 @@ elSendButton.addEventListener('click', (event) => {
   }
   
 })
+
+let maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+let mask = IMask(checkTel, maskOptions);
