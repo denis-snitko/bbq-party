@@ -86,14 +86,14 @@ elSendButton.addEventListener('click', (event) => {
   }
   
   if (checkYes.checked || checkNo.checked) {
-    console.log('checked')
+    return null
   } else {
     elModalWarningText.textContent = 'Вы должны определиться идете ли на мероприятие!'
     showWarning()
   }
   
   if(checkConditions.checked){
-    console.log(checkConditions.checked)
+    return null
   } else {
     elModalWarningText.textContent = 'Вы не согласились с условиями акции!'
     showWarning()
